@@ -25,7 +25,7 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
-	await event.reply_photo("https://telegra.ph/file/165941ae764a56d6d9c89.jpg",
+	await event.reply_photo("https://graph.org/file/1234dbd7d5305c9adf3c4.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
                                     [InlineKeyboardButton("Our Channel", url="https://t.me/megascreen"),
